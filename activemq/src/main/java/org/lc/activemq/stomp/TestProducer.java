@@ -20,7 +20,7 @@ public class TestProducer {
             // 以下发送一条信息（您也可以使用“事务”方式）
             con.send("/test", "234543" + new Date().getTime());
         } catch(Exception e) {
-            e.printStackTrace(System.out);
+            e.printStackTrace();
         }
 
 	}
