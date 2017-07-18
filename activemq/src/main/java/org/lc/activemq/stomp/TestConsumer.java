@@ -12,7 +12,7 @@ public class TestConsumer {
 	public static void main(String[] args) throws Exception {
 		  // 建立连接
         StompConnection con = new StompConnection();
-        Socket so = new Socket("localhost", 61613);
+        Socket so = new Socket("192.168.100.186", 61613);
         con.open(so);
         con.setVersion("1.2");
         con.connect("admin", "admin");

@@ -19,7 +19,7 @@ public class JMSConsumer {
      */
     public static void main (String[] args) throws Exception {
         // 定义JMS-ActiveMQ连接信息
-        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.100.190:61616");
         Session session = null;
         Destination sendQueue;
         Connection connection = null;
