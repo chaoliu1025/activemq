@@ -10,7 +10,7 @@ public class SendMulticast {
         // 组播地址
         InetAddress group = InetAddress.getByName("224.5.6.7");
         // 组播端口，同时也是UDP 数据报的发送端口
-        int port = 2181;
+        int port = 1234;
         MulticastSocket mss = null; 
 
         // 创建一个用于发送/接收的MulticastSocket组播套接字对象

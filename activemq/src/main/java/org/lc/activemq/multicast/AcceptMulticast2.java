@@ -7,7 +7,7 @@ import java.net.MulticastSocket;
 public class AcceptMulticast2 {
 	public static void main(String[] args) throws Throwable {
         // 建立组播套接字，并加入分组
-        MulticastSocket multicastSocket = new MulticastSocket(2181);
+        MulticastSocket multicastSocket = new MulticastSocket(1234);
         // 注意，组播地址和端口必须和发送者的一直，才能加入正确的组
         InetAddress ad = InetAddress.getByName("224.5.6.7");
         multicastSocket.joinGroup(ad);
