@@ -8,9 +8,9 @@ import java.util.Date;
 public class SendMulticast {
     public static void main(String[] args) throws Throwable {
         // 组播地址
-        InetAddress group = InetAddress.getByName("239.0.0.5");
+        InetAddress group = InetAddress.getByName("224.5.6.7");
         // 组播端口，同时也是UDP 数据报的发送端口
-        int port = 19999;
+        int port = 2181;
         MulticastSocket mss = null; 
 
         // 创建一个用于发送/接收的MulticastSocket组播套接字对象
